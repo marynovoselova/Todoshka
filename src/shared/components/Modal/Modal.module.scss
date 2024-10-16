@@ -1,0 +1,10 @@
+@import '../../styles/mixins';
+
+.cancelButton,
+.deleteButton {
+  @include button-cancel;
+}
+
+.confirmButton {
+  @include button-confirm;
+}

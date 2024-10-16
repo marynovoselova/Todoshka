@@ -1,0 +1,22 @@
+@import 'colors';
+
+@mixin button-base($color, $hover-color) {
+  color: $color !important;
+  border: 1px solid $color !important;
+  text-decoration: none !important;
+  background-color: transparent !important;
+  box-shadow: none !important;
+
+  &:hover {
+    border: 1px solid $color !important;
+    background-color: $hover-color !important;
+  }
+}
+
+@mixin button-confirm {
+  @include button-base($color-success-primary, $color-success-secondary);
+}
+
+@mixin button-cancel {
+  @include button-base($color-error-primary, $color-error-lightest);
+}

@@ -1,0 +1,12 @@
+@import 'src/shared/styles/mixins';
+
+.deleteButton {
+  @include button-cancel;
+}
+
+.deleteAllCompleted {
+  display: flex;
+  justify-content: center;
+  position: sticky;
+  bottom: 50px;
+}
