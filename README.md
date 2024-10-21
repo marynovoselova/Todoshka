@@ -62,7 +62,7 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
 ### `npm run build`
 
-Builds the app for production to the `dist` folder using **Webpack**.
+Builds the app for production to the `build` folder using **Webpack**.
 
 ### `npm test`
 

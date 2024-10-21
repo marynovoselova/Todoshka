@@ -8,7 +8,7 @@ module.exports = {
     entry: './src/index.tsx',
     output: {
         filename: '[name].[contenthash].js',
-        path: path.resolve(__dirname, 'dist'),
+        path: path.resolve(__dirname, 'build'),
         clean: true,
     },
     resolve: {
@@ -76,7 +76,7 @@ module.exports = {
         // new BundleAnalyzerPlugin(),
     ],
     devServer: {
-        static: path.join(__dirname, 'dist'),
+        static: path.join(__dirname, 'build'),
         // hot: true,
         open: true,
         port: 3000,
