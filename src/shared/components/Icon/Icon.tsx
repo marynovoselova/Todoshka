@@ -5,20 +5,22 @@ import { IconProps } from '@shared/types';
 import styles from './Icon.module.scss';
 
 const Icon: FC<IconProps> = ({ iconName, ...rest }) => {
-  const theme = useTheme();
-  const iconStyles = theme.palette.mode === 'dark' ? styles.darkTheme : '';
+  const { palette } = useTheme();
+  const iconStyles = palette.mode === 'dark' ? styles.darkTheme : '';
 
   const IconMap = {
     Cross: <Icons.Cross className={iconStyles} {...rest} />,
     DarkMode: <Icons.DarkMode {...rest} />,
     Delete: <Icons.Delete className={iconStyles} {...rest} />,
     En: <Icons.En {...rest} />,
+    Error: <Icons.Error {...rest} />,
     Favorite: <Icons.Favorite className={iconStyles} {...rest} />,
     FavoriteActive: <Icons.FavoriteActive className={iconStyles} {...rest} />,
     Hint: <Icons.Hint className={iconStyles} {...rest} />,
     LightMode: <Icons.LightMode {...rest} />,
     Loading: <Icons.Loading className={iconStyles} {...rest} />,
     Logo: <Icons.Logo className={iconStyles} {...rest} />,
+    NoTasks: <Icons.NoTasks {...rest} />,
     Pen: <Icons.Pen className={iconStyles} {...rest} />,
     Ru: <Icons.Ru {...rest} />,
   };

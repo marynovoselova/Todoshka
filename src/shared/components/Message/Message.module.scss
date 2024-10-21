@@ -1,0 +1,33 @@
+@import '@shared/styles/colors';
+@mixin message($background) {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: 20px 0;
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  padding: 40px;
+  background-color: $background;
+}
+
+.message {
+  &Container {
+    &Light {
+      @include message($color-background-secondary);
+    }
+
+    &Dark {
+      @include message($color-text-primary);
+    }
+
+    & p {
+      margin: 0;
+    }
+  }
+
+  &Image {
+    margin-bottom: 15px;
+  }
+}

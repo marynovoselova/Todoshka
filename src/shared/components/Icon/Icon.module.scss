@@ -1,3 +1,5 @@
+@import "@shared/styles/colors";
+
 .darkTheme path:last-of-type {
-  stroke: white;
+  stroke: $color-background-primary;
 }

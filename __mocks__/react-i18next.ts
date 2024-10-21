@@ -14,6 +14,7 @@ const useTranslation = () => ({
       delete_all_completed_tasks: 'Delete all completed tasks',
       delete_task: 'Delete task',
       edit_task: 'Edit task',
+      image: 'image',
       hint_for_creating_tasks: 'Hint for creating tasks',
       mark_as_favorite: 'Mark as favorite',
       no_tasks_message: 'No tasks available',
