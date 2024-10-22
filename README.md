@@ -1,5 +1,7 @@
 # Todoshka
 
+You can see it <a href="https://marynovoselova.github.io/Todoshka" alt="Todoshka">here 🌏</a>
+
 ## Description
 
 **Todoshka** is a simple and intuitive task management application built using **React**, **TypeScript**, and **Redux**. This project is designed following modern frontend development principles such as **Feature-Sliced Design (FSD)** and **clean code** practices. It allows users to add, edit, delete, and filter tasks, and it's highly customizable with support for theming and translations.
